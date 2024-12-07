@@ -1,0 +1,40 @@
+uuid: de8319f0-b142-41d6-89b5-2af38bb8be0f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.transaction.field_card
+    - field.field.paragraph.transaction.field_transaction_type
+    - field.field.paragraph.transaction.field_value
+    - paragraphs.paragraphs_type.transaction
+id: paragraph.transaction.default
+targetEntityType: paragraph
+bundle: transaction
+mode: default
+content:
+  field_card:
+    type: entity_reference_autocomplete
+    weight: 0
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_transaction_type:
+    type: options_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_value:
+    type: number
+    weight: 2
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,17 @@
+uuid: 5d265446-784e-4063-85ec-66ca435dfc5e
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Tarjeta
+type: card
+description: 'Tipo de contenido para las tarjetas de los estudiantes'
+help: null
+new_revision: false
+preview_mode: 0
+display_submitted: false

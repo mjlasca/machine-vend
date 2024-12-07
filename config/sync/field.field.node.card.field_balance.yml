@@ -1,0 +1,25 @@
+uuid: e630c0cd-de36-47e5-9424-c3555f91b20d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_balance
+    - node.type.card
+id: node.card.field_balance
+field_name: field_balance
+entity_type: node
+bundle: card
+label: Saldo
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0.0
+default_value_callback: ''
+settings:
+  min: 0.0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

@@ -1,0 +1,56 @@
+uuid: abaed76e-e10d-4a57-88ef-c1083314e281
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.teacher.field_lastname
+    - field.field.node.teacher.field_name
+    - field.field.node.teacher.field_school
+    - field.field.node.teacher.field_user
+    - node.type.teacher
+  module:
+    - user
+id: node.teacher.default
+targetEntityType: node
+bundle: teacher
+mode: default
+content:
+  field_lastname:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_school:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_user:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

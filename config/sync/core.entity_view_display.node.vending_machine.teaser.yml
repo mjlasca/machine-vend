@@ -1,0 +1,25 @@
+uuid: c598a966-9770-4062-a894-9cf3c4574d3a
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.vending_machine.field_register_products
+    - field.field.node.vending_machine.field_teacher
+    - node.type.vending_machine
+  module:
+    - user
+id: node.vending_machine.teaser
+targetEntityType: node
+bundle: vending_machine
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_register_products: true
+  field_teacher: true
+  langcode: true

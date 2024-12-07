@@ -1,0 +1,19 @@
+uuid: 0e6b6d27-b8c6-4963-944d-77f50701d09a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_grade
+    - node.type.student
+id: node.student.field_grade
+field_name: field_grade
+entity_type: node
+bundle: student
+label: Grado
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

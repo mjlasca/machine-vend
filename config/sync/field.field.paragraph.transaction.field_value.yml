@@ -1,0 +1,25 @@
+uuid: 8dfe8fb7-1dba-40fc-86aa-2943447a5655
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_value
+    - paragraphs.paragraphs_type.transaction
+id: paragraph.transaction.field_value
+field_name: field_value
+entity_type: paragraph
+bundle: transaction
+label: Valor
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0.0
+default_value_callback: ''
+settings:
+  min: 0.0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

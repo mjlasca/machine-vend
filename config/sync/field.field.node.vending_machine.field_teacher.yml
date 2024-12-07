@@ -1,0 +1,29 @@
+uuid: 3fa03039-014c-4de4-9808-c01d0977b934
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_teacher
+    - node.type.teacher
+    - node.type.vending_machine
+id: node.vending_machine.field_teacher
+field_name: field_teacher
+entity_type: node
+bundle: vending_machine
+label: Docente
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      teacher: teacher
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

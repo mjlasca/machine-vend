@@ -1,0 +1,33 @@
+uuid: 0080105e-47d1-4893-841d-a94afaaab910
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.product_inventory.field_cant
+    - field.field.paragraph.product_inventory.field_product
+    - paragraphs.paragraphs_type.product_inventory
+id: paragraph.product_inventory.default
+targetEntityType: paragraph
+bundle: product_inventory
+mode: default
+content:
+  field_cant:
+    type: number
+    weight: 1
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_product:
+    type: entity_reference_autocomplete
+    weight: 0
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

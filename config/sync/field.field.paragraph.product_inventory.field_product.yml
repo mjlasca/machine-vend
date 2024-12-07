@@ -1,0 +1,29 @@
+uuid: ac0db8ef-a4b5-480a-b5ca-c77c9dc2d157
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_product
+    - node.type.product
+    - paragraphs.paragraphs_type.product_inventory
+id: paragraph.product_inventory.field_product
+field_name: field_product
+entity_type: paragraph
+bundle: product_inventory
+label: Producto
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      product: product
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

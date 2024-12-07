@@ -1,0 +1,9 @@
+uuid: 54f26c0e-e415-4256-b303-1162d725858f
+langcode: es
+status: true
+dependencies: {  }
+name: Colegio
+vid: school
+description: 'Taxonomía para crear colegios'
+weight: 0
+new_revision: false

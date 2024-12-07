@@ -1,0 +1,43 @@
+uuid: 7afb34d9-021e-49db-8ad8-38acb9097068
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.transaction.field_card
+    - field.field.paragraph.transaction.field_transaction_type
+    - field.field.paragraph.transaction.field_value
+    - paragraphs.paragraphs_type.transaction
+  module:
+    - options
+id: paragraph.transaction.default
+targetEntityType: paragraph
+bundle: transaction
+mode: default
+content:
+  field_card:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_transaction_type:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_value:
+    type: number_decimal
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

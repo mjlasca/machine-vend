@@ -1,0 +1,17 @@
+uuid: 5b9e950b-f70d-4c88-aec3-eced766ae279
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Máquina expendedora'
+type: vending_machine
+description: 'Tipo de contenido para montar productos a vender'
+help: null
+new_revision: false
+preview_mode: 1
+display_submitted: true

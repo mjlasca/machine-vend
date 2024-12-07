@@ -1,0 +1,11 @@
+uuid: 567ed59d-99a6-402e-bf07-ec55e03488ce
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.vending_machine
+id: node.vending_machine
+target_entity_type_id: node
+target_bundle: vending_machine
+default_langcode: site_default
+language_alterable: false

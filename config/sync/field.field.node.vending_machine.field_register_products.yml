@@ -1,0 +1,34 @@
+uuid: bf658729-d909-4d68-848e-eddb1c722e00
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_register_products
+    - node.type.vending_machine
+    - paragraphs.paragraphs_type.product_inventory
+  module:
+    - entity_reference_revisions
+id: node.vending_machine.field_register_products
+field_name: field_register_products
+entity_type: node
+bundle: vending_machine
+label: 'Inventario de productos'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      product_inventory: product_inventory
+    negate: 0
+    target_bundles_drag_drop:
+      product_inventory:
+        weight: 3
+        enabled: true
+      transaction:
+        weight: 4
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,27 @@
+uuid: a9890a9d-c39e-4b4b-be52-16d818e8787d
+langcode: es
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_transaction_type
+field_name: field_transaction_type
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: buy
+      label: Compra
+    -
+      value: recharge
+      label: Recarga
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

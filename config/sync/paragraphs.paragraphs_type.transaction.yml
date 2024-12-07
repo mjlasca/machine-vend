@@ -1,0 +1,10 @@
+uuid: 01183a5f-fcaf-4446-87a3-b361d2ea1250
+langcode: es
+status: true
+dependencies: {  }
+id: transaction
+label: Transacción
+icon_uuid: null
+icon_default: null
+description: 'Tipo de paragraph para registrar transacciones'
+behavior_plugins: {  }

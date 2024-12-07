@@ -1,0 +1,40 @@
+uuid: c9c803da-688d-4b81-89aa-7bc30cbcbad7
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.vending_machine.field_register_products
+    - field.field.node.vending_machine.field_teacher
+    - node.type.vending_machine
+  module:
+    - entity_reference_revisions
+    - user
+id: node.vending_machine.default
+targetEntityType: node
+bundle: vending_machine
+mode: default
+content:
+  field_register_products:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_teacher:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

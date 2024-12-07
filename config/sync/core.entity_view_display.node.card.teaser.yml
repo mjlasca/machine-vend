@@ -1,0 +1,27 @@
+uuid: afeeadc5-8233-4660-bd42-b9db435d1996
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.card.field_balance
+    - field.field.node.card.field_student
+    - field.field.node.card.field_transaction
+    - node.type.card
+  module:
+    - user
+id: node.card.teaser
+targetEntityType: node
+bundle: card
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_balance: true
+  field_student: true
+  field_transaction: true
+  langcode: true

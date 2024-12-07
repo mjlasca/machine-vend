@@ -1,0 +1,22 @@
+uuid: bff76054-9767-4471-8a11-af1ebe3c5874
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.vending_machine
+id: node.vending_machine.promote
+field_name: promote
+entity_type: node
+bundle: vending_machine
+label: 'Promocionado a la página principal'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

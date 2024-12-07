@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: HlN7eAN2N4JIHsYv56V4E7sqC9bS609KwvGFjyD_mgk
+langcode: es
+uuid: 2883dee4-17b6-4dd7-84a5-40d7ce083792
+name: 'Máquina expendedora virtual'
+mail: mjlasluisa@gmail.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /user/login
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: es
+mail_notification: null

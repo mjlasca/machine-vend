@@ -1,0 +1,29 @@
+uuid: 4bf34087-3c52-474f-87ec-ea6241b4f78b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_card
+    - node.type.card
+    - paragraphs.paragraphs_type.transaction
+id: paragraph.transaction.field_card
+field_name: field_card
+entity_type: paragraph
+bundle: transaction
+label: 'Referencia a tarjeta'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      card: card
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

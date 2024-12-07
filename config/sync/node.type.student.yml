@@ -1,0 +1,17 @@
+uuid: 335dc762-d05c-4573-ba62-25c95af7ab61
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Estudiante
+type: student
+description: 'Tipo de contenido para crear estudiantes'
+help: null
+new_revision: false
+preview_mode: 1
+display_submitted: false

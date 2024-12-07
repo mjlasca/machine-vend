@@ -1,0 +1,10 @@
+uuid: 0068b05e-5a2e-4a67-a017-2b6ec2c51dd5
+langcode: es
+status: true
+dependencies: {  }
+id: product_inventory
+label: 'Inventario de productos'
+icon_uuid: null
+icon_default: null
+description: 'Tipo de paragraph para crear los productos que se mostrarán en la máquina expendedora'
+behavior_plugins: {  }

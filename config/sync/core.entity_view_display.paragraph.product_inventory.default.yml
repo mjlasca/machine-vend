@@ -1,0 +1,31 @@
+uuid: 2c8fdb22-3197-4bd5-af7e-7266d7d3663a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.product_inventory.field_cant
+    - field.field.paragraph.product_inventory.field_product
+    - paragraphs.paragraphs_type.product_inventory
+id: paragraph.product_inventory.default
+targetEntityType: paragraph
+bundle: product_inventory
+mode: default
+content:
+  field_cant:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_product:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

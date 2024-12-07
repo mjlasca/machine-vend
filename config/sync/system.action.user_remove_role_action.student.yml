@@ -1,0 +1,14 @@
+uuid: 3ad95e04-b179-40bd-a086-ada2e2ca5fc8
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.student
+  module:
+    - user
+id: user_remove_role_action.student
+label: 'Elimina el rol Estudiante al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: student

@@ -1,0 +1,23 @@
+uuid: 2599569a-c239-4af3-940c-d784b029ef1e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cant
+    - paragraphs.paragraphs_type.product_inventory
+id: paragraph.product_inventory.field_cant
+field_name: field_cant
+entity_type: paragraph
+bundle: product_inventory
+label: Cantidad
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

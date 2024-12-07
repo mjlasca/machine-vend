@@ -1,0 +1,21 @@
+uuid: 805105b3-719a-4a30-9762-8f69c4718d13
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_transaction_type
+    - paragraphs.paragraphs_type.transaction
+  module:
+    - options
+id: paragraph.transaction.field_transaction_type
+field_name: field_transaction_type
+entity_type: paragraph
+bundle: transaction
+label: 'Tipo de transacción'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

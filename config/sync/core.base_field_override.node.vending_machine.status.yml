@@ -1,0 +1,22 @@
+uuid: b9294116-9936-4014-a2a2-f437f011cade
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.vending_machine
+id: node.vending_machine.status
+field_name: status
+entity_type: node
+bundle: vending_machine
+label: Publicado
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean
